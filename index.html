@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <link rel="stylesheet" type="text/css" href="css/home-style.css">
     <link rel="stylesheet" type="text/css" href="css/home-mobile-style.css">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
-    <title>Kiowe Smith</title>
+    <title>Page Title</title>
     <style>
         body {
         background-color: rgb(255, 255, 255);
@@ -16,7 +22,7 @@
 
     <body>
 
-        <div class="menu">
+        <div class="menu fixed-top">
             <ul>
                 <li><a href="#profile-div">Home</a></li>
                 <li><a href="#education-div">Education</a></li>
@@ -29,18 +35,18 @@
               </ul>
         </div>
 
-        <div class="profile" id="profile-div">
+        <div class="profile col-md-12" id="profile-div">
              <h1>Profile</h1>
              <img src="https://github.com/kiowesmith21/kiowesmith21.github.io/blob/master/img/profile-pic.jpg?raw=true" alt="">
-             <h2>Kiowe Smith</h2>
+             <h2 class="text-body">Kiowe Smith</h2>
              <p>Major: Computer Science</p>
         </div>
-        <div class="education" id="education-div">
+        <div class="education col-md-12" id="education-div">
             <h1>Education</h1>
             <h3>St. John's University</h3>
             <p>I am a 4th-year computer science major at St. John's University</p>
         </div>
-        <div class="experience" id="experience-div">
+        <div class="experience col-md-12" id="experience-div">
             <h1>Experience</h1>
             <ul>
                 <li>
@@ -60,36 +66,56 @@
                 </li>
               </ul>
         </div>
-        <div class="skills" id="skills-div">
+        <div class="skills col-md-12" id="skills-div">
             <h1>Programming Skills</h1>
-            <table>
-                <tr>
-                  <th>Language</th>
-                  <th>Level</th>
-                </tr>
-                <tr>
-                  <td>Java</td>
-                  <td>Intermediate</td>
-                </tr>
-                <tr>
-                  <td>HTML/CSS</td>
-                  <td>Intermediate</td>
-                </tr>
-                <tr>
-                  <td>Javascript</td>
-                  <td>Intermediate</td>
-                </tr>
-                <tr>
-                  <td>Python</td>
-                  <td>Intermediate</td>
-                </tr>
-                <tr>
-                  <td>Node.JS</td>
-                  <td>Novice</td>
-                </tr>
+            <table class="table">
+                <thead>
+                    <tr>
+                      <th>Skill</th>
+                      <th>Level </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Java</td>
+                      <td>Intermediate  
+                        <div class="progress">
+                            <div class="progress-bar" style="width:70%"></div>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td>HTML/CSS</td>
+                      <td>Intermediate 
+                        <div class="progress">
+                            <div class="progress-bar" style="width:70%"></div>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>Javascript</td>
+                      <td>Intermediate  
+                        <div class="progress">
+                            <div class="progress-bar" style="width:60%"></div>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate  
+                            <div class="progress">
+                                <div class="progress-bar" style="width:50%"></div>
+                            </div></td>
+                      </tr>
+                      <tr>
+                        <td>Node.JS</td>
+                        <td>Novice  
+                            <div class="progress">
+                                <div class="progress-bar" style="width:30%"></div>
+                            </div></td>
+                      </tr>
+                  </tbody>
               </table>
         </div>
-        <div class="interests" id="interests-div">
+        <div class="interests col-md-12" id="interests-div">
             <h1>Interests & Hobbies</h1>
             <h3>Basketball</h3>
             <h3>Football</h3>
@@ -99,25 +125,27 @@
             <a href="https://www.youtube.com/watch?v=dushZybUYnM" target="_blank"><h3>Video Games: Overwatch</h3></a>
             <a href="https://www.youtube.com/watch?v=dushZybUYnM" target="_blank"><img src="https://wallpapercave.com/wp/wp1809698.jpg" alt="" ></a>
         </div>
+        
+        <h1 id ="media-head">Favorite Media</h1>
         <div class="media" id="media-div">
-            <h1>Favorite Media</h1>
-            <span>
-                <h3>Favorite Song: "Babywipe" by: Ski Mask the Slump God</h3>
+            <span class="col-md-4">
+                <h4>Song: "Babywipe" Ski Mask the Slump God</h4>
                 <video width="400" height="300" controls>
                     <source src="res/Ski Mask The Slump God - BabyWipe (Dir. by ColeBennett).mp4" type="video/mp4">
             </span>
-            <span>
-                <h3>Favorite Show: "Ozark"</h3>
+            <span class="col-md-4">
+                <h4>Favorite Show: "Ozark"</h4>
                 <video width="400" height="300" controls>
                     <source src="res/Ozark Official Trailer [HD] Netflix.mp4" type="video/mp4">
             </span> 
-            <span>
-                <h3>Favorite Movie: "Django Unchained"</h3>
+            <span class="col-md-4">
+                <h4>Favorite Movie: "Django Unchained"</h4>
                 <video width="400" height="300" controls>
                     <source src="res/DJANGO UNCHAINED - Official International Trailer.mp4" type="video/mp4">
             </span>
         </div>
-        <div class="favorite-sites" id="favorite-sites-div">
+
+        <div class="favorite-sites col-md-12" id="favorite-sites-div">
             <h1>Favorite Websites</h1>
             <ul>
                 <li>
@@ -134,9 +162,16 @@
                 </li>
             </ul>
         </div>
-        <div class="projects" id="projects-div">
+        <div class="projects col-md-12" id="projects-div">
             <h1>Projects</h1>
-            <h3>Profile Page</h3>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="res/profile-page-img.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Profile Page</h4>
+                  <p class="card-text">My portfolio page showcasing my projects and some of my interests</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+              </div>
 
             <form action="index.html">
                 <input type="submit" value="Back to top">
