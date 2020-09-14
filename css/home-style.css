@@ -26,6 +26,7 @@
   }
 
   .profile {
+      margin-top: 10px;
       text-align: center;
   }
 
@@ -36,23 +37,23 @@
 
   .education {
       padding-left: 50px;
-      padding-bottom: 10px;
+      padding-bottom: 15px;
   }
 
   .experience {
       padding-left: 50px;
-      padding-bottom: 10px;
+      padding-bottom: 15px;
   }
 
   .skills {
-      padding-bottom: 10px;
+      padding-bottom: 15px;
       padding-left: 50px;
       padding-right: 50px;
   }
 
   .skills table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
+    font-family: 'ABeeZee';
+    
     width: 100%;
   }
   
@@ -61,14 +62,10 @@
     text-align: left;
     padding: 8px;
   }
-  
- .skills tr:nth-child(even) {
-    background-color: #dddddd;
-  }
 
   .interests {
       padding-left: 50px;
-      padding-bottom: 10px;
+      padding-bottom: 15px;
   }
 
   .interests a {
@@ -80,23 +77,33 @@
       max-width: 500px;
   }
 
-  #media {
+  .media {
     padding-left: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     
+}
+
+#media-head {
+    padding-bottom: 15px;
+    padding-left: 50px;
 }
 
 .media span {
     display: inline-block;
-    margin-left: 40px;
+    
 }
+
+.media h4 {
+    padding-top: 5px;
+}
+
 
 .favorite-sites {
     padding-left: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .projects {
     padding-left: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
